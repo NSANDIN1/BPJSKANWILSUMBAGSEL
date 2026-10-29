@@ -1,0 +1,18 @@
+/* dash_kepesertaan.css - tambahan gaya Dashboard Perisai (publik).
+   Kerangka (header, hero, kartu, KPI, grafik, tabel) memakai publik.css; file ini hanya yang khusus. */
+@media (min-width: 1024px) { .kpi-grid.kpi-5 { grid-template-columns: repeat(5, 1fr); } }
+.kpi-5 .kpi-value { font-size: 36px; margin-top: 8px; }
+
+.ew-head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.ew-head h2 { display: flex; align-items: center; gap: 8px; }
+.ew-head h2 .ico { font-size: 20px; }
+.ew-head p { margin: 4px 0 0; font-size: 14px; color: var(--g700); }
+#ew-info { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.tbl-scroll.max { max-height: 32rem; }
+.pill { display: inline-block; font-size: 12px; font-weight: 800; padding: 6px 12px; border-radius: 999px; white-space: nowrap; }
+.pill-red { background: #fee2e2; color: #b91c1c; }
+.pill-amber { background: #fef3c7; color: #92400e; }
+table.tbl-d tr.row-red { background: rgba(254,242,242,.4); }
+table.tbl-d td.t-date { font-size: 12px; font-weight: 700; white-space: nowrap; }
+table.tbl-d td.aman { padding: 24px; text-align: center; font-weight: 700; color: var(--green); }

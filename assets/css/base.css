@@ -1,0 +1,30 @@
+/* base.css - dasar bersama: warna, font, reset, tombol, pesan */
+:root {
+  --blue: #0078C8; --green: #00B140; --lgreen: #88C438; --yellow: #D4E116;
+  --bg-soft: #F4F7F6; --dark-text: #122B40;
+  --g50: #f9fafb; --g100: #f3f4f6; --g200: #e5e7eb; --g300: #d1d5db; --g500: #6b7280; --g600: #4b5563; --g700: #374151; --g900: #111827;
+  --s50: #f8fafc; --s100: #f1f5f9; --s200: #e2e8f0; --s300: #cbd5e1; --s400: #94a3b8; --s500: #64748b; --s700: #334155; --s800: #1e293b; --s900: #0f172a;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; color: var(--dark-text); background: var(--bg-soft); -webkit-font-smoothing: antialiased; line-height: 1.5; }
+a { color: inherit; }
+img, svg { max-width: 100%; }
+button { font: inherit; }
+.hidden { display: none !important; }
+.rotate-180 { transform: rotate(180deg); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--s100); }
+::-webkit-scrollbar-thumb { background: var(--s300); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--s400); }
+
+/* Pesan (flash) */
+.alert { padding: 14px 18px; border-radius: 14px; font-size: 14px; font-weight: 600; border: 1px solid transparent; }
+.alert-sukses { background: #ecfdf5; color: #047857; border-color: #d1fae5; }
+.alert-error  { background: #fef2f2; color: #b91c1c; border-color: #fee2e2; }
+
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.shake { animation: shake .3s ease-in-out; }
+@keyframes pulse-dot { 50% { opacity: .5; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
