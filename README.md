@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistem Informasi Internal BPJS Ketenagakerjaan Kanwil Sumbagsel (PHP + MySQL)
 
 Seluruh halaman berupa file `.php`. CSS ada di folder `assets/css/` (tanpa Tailwind/CDN CSS), JS halaman di `assets/js/`.
@@ -41,3 +42,6 @@ database/     db_sistem_internal.sql
 - Unggah Excel/PDF Monthly Report (Pelayanan) menjalankan Python (`pelayanan/tools/`, PDF butuh Poppler `pdftotext`).
   Atur lokasi Poppler di `POPPLER_BIN` pada `config/konstanta.php`. Tanpa Python, file tetap tersimpan tetapi isinya tidak terbaca.
 - Grafik, peta, dan ikon memakai CDN (Chart.js, Leaflet, Font Awesome, SheetJS) sehingga perlu internet.
+=======
+# bpjs_sumbagsel_operasional
+>>>>>>> ada09e75a13c9a7dff862a2527e88189dc677969
