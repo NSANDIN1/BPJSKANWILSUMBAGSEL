@@ -45,3 +45,4 @@ database/     db_sistem_internal.sql
 =======
 # bpjs_sumbagsel_operasional
 >>>>>>> ada09e75a13c9a7dff862a2527e88189dc677969
+"# BPJSKANWILSUMBAGSEL" 
